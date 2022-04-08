@@ -1,0 +1,7 @@
+<li [style.margin-left]="(Item.Level * 10) + 'px'">
+    <div style="display: flex; flex-direction: row;">
+        <p>{{Item.Title}}</p>
+    </div>
+
+    <app-tree-view-node *ngFor="let item of ChildsList" [Item]="item"></app-tree-view-node>
+</li>
